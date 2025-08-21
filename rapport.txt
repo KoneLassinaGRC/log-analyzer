@@ -1,0 +1,51 @@
+==============================
+Rapport d'analyse des logs
+==============================
+
+Date de génération : 2025-08-21 09:28:29
+
+Fichier analysé : linux_auth.log
+
+Tentatives de connexion échouées :
+
+Connexions réussies :
+
+---
+
+Fichier analysé : README_linux.md
+
+Tentatives de connexion échouées :
+- root : 1 tentatives (IP : 192.168.1.25)
+
+Connexions réussies :
+
+---
+
+Fichier analysé : README_windows.md
+
+Tentatives de connexion échouées :
+- for : 1 tentatives (IP : 192.168.1.25)
+
+Connexions réussies :
+
+---
+
+Fichier analysé : windows_security.log
+
+Tentatives de connexion échouées :
+- for : 3 tentatives (IP : 192.168.1.25, 10.0.0.5)
+
+Connexions réussies :
+- 10:15:32 : 1 connexions (IP : 192.168.1.10)
+- 10:25:45 : 1 connexions (IP : 192.168.1.10)
+
+---
+
+Résumé global :
+- Nombre total de tentatives échouées : 5
+- Nombre total de connexions réussies : 2
+- IP suspectes : 192.168.1.25, 10.0.0.5
+
+==============================
+Fin du rapport
+==============================
