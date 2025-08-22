@@ -1,39 +1,58 @@
-Analyseur de Logs de Sécurité
-Description
+# Log Analyzer - Version 2 🚀
 
-Ce projet est un analyseur de logs de sécurité destiné à détecter des intrusions, des tentatives de connexion suspectes et d’autres anomalies dans les serveurs SSH, Apache, Nginx et FTP.
-Il parse des fichiers logs, identifie des patterns spécifiques et génère des rapports détaillés en HTML, JSON ou TXT.
+## 📌 Description
+Cette deuxième version de **Log Analyzer** améliore la première (V1) avec de nouvelles fonctionnalités, une meilleure organisation du code et une documentation plus claire.
 
-Fonctionnalités
+Le but de l’outil est d’analyser des fichiers de logs afin de détecter rapidement :
+- Les erreurs critiques
+- Les tentatives d’accès suspectes
+- Les schémas récurrents d’attaques
 
-Détection des tentatives de connexion SSH échouées ou réussies
+---
 
-Détection des utilisateurs invalides sur SSH
+## ✨ Nouveautés par rapport à V1
+- ✅ Code réorganisé en modules (`config.py`, `log_analyzer.py`, `report.py`, etc.)
+- ✅ Ajout de nouveaux patterns dans `patterns.py`
+- ✅ Rapport d’analyse amélioré (généré en Markdown ou HTML)
+- ✅ Gestion d’erreurs plus robuste
+- ✅ Documentation enrichie
 
-Analyse des erreurs Apache et Nginx (404, 401…)
+---
 
-Détection des échecs de login FTP
+## ⚙️ Installation
+Clonez le dépôt puis placez-vous dans le dossier `V2` :
 
-Génération de rapports détaillés avec statistiques
+```bash
+git clone https://github.com/KoneLassinaGRC/log-analyzer.git
+cd log-analyzer/V2
+▶️ Utilisation
 
-Mode test pour vérifier les patterns sur des logs d’exemple
+Exécutez le script principal pour analyser vos logs :
 
-Support de la géolocalisation des IPs (optionnel)
+python log_analyzer.py --input chemin/vers/logfile.log --output rapport.txt
 
-Personnalisation des seuils et de la fenêtre temporelle
 
-Arborescence du projet
-log-analyzer/
-├─ core/
-│  ├─ main.py                 # Script principal
-│  ├─ log_analyzer.py         # Analyseur et gestion de la configuration
-│  ├─ patterns.py             # Définition des patterns de logs
-│  ├─ geolocation.py          # Service de géolocalisation (optionnel)
-├─ logs/
-│  ├─ ssh_logs.txt            # Logs SSH d'exemple
-│  ├─ apache_logs.txt         # Logs Apache d'exemple
-│  ├─ nginx_logs.txt          # Logs Nginx d'exemple
-│  ├─ ftp_logs.txt            # Logs FTP d'exemple
-├─ config.json                # Configuration par défaut
-├─ README.md                  # Documentation du projet
-└─ requirements.txt           # Librairies Python nécessaires
+Options disponibles :
+
+--input : chemin vers le fichier log à analyser
+
+--output : fichier où sera enregistré le rapport
+📂 Structure du projet
+V2/
+ ├── config.py         # Configuration générale
+ ├── geolocation.py    # Gestion des adresses IP et géolocalisation
+ ├── log_analyzer.py   # Script principal
+ ├── patterns.py       # Détection des motifs d’attaques
+ ├── report.py         # Génération des rapports
+ └── README.md         # Documentation (ce fichier)
+
+📊 Exemple de sortie
+[INFO] Analyse du fichier system.log...
+[WARNING] Tentative d'accès non autorisée détectée (IP: 192.168.1.50)
+[ERROR] Erreur critique dans le service Apache
+Rapport généré : rapport.txt
+
+📌 Auteur
+
+Kone Lassina – Étudiant en cybersécurité SOC 
+
