@@ -1,0 +1,17 @@
+# Requêtes HTTP pour géolocalisation ou API externes
+requests
+
+# Templates HTML pour génération de rapports
+jinja2
+
+# Manipulation et parsing des fichiers/logs
+python-dateutil
+
+# Analyse et manipulation des données (optionnel si utilisé)
+pandas
+
+# Couleurs dans la console et affichage friendly (optionnel)
+colorama
+
+# Détection de motifs avec expressions régulières (standard library suffit)
+# re est déjà inclus, donc pas besoin ici

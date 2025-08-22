@@ -1,0 +1,4 @@
+Aug 21 10:15:32 server sshd[12345]: Failed password for admin from 192.168.1.100
+Aug 21 10:16:45 server sshd[12346]: Accepted password for user1 from 10.0.0.50
+Aug 21 10:17:20 server sshd[12347]: Invalid user hacker from 203.0.113.42
+Aug 21 10:18:05 server sshd[12348]: Failed password for root from 203.0.113.42

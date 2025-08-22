@@ -1,0 +1,2 @@
+2025/08/21 10:22:05 [error] 1234#0: *56 open() "/usr/share/nginx/html/admin" failed (2: No such file or directory), client: 192.168.1.150, server: example.com, request: "GET /admin HTTP/1.1", host: "example.com"
+2025/08/21 10:22:10 [error] 1235#0: *57 open() "/usr/share/nginx/html/private" failed (2: No such file or directory), client: 10.0.0.51, server: example.com, request: "GET /private HTTP/1.1", host: "example.com"

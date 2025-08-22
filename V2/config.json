@@ -1,0 +1,24 @@
+{
+  "threshold": 5,
+  "time_window": 60,
+  "log_dir": "logs",
+  "output_file": "rapport.html",
+  "enable_geolocation": true,
+  "report_format": "html",
+  "verbose": false,
+  "patterns": {
+    "ssh_failed_login": true,
+    "ssh_successful_login": true,
+    "ssh_invalid_user": true,
+    "ssh_failed_login_modern": true,
+    "apache_404": true,
+    "apache_auth_failed": true,
+    "apache_401": true,
+    "nginx_404": true,
+    "ftp_fail_login": true
+  },
+  "geolocation": {
+    "service": "ipinfo",
+    "api_key": ""
+  }
+}
